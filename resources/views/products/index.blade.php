@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Products - All Categories</title>
-</head>
-
-<body>
+@extends('layouts.app')
+@section('content')
     <h1>All Products</h1>
     <!-- Display list of all products -->
-</body>
-
-</html>
+    <br>
+    <a href="{{ route('home') }}" class="btn btn-success">Return to Home</a>
+@endsection

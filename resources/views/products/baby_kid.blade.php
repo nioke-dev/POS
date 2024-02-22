@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Products - Baby and Kid</title>
-</head>
-
-<body>
+@extends('layouts.app')
+@section('content')
     <h1>Baby and Kid Products</h1>
     <!-- Display list of baby and kid products -->
-</body>
-
-</html>
+    <br>
+    <a href="{{ route('home') }}" class="btn btn-success">Return to Home</a>
+@endsection

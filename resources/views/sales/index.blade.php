@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sales Page</title>
-</head>
-<body>
+@extends('layouts.app')
+@section('content')
     <h1>Sales Page - POS Transactions</h1>
     <!-- Display sales transactions -->
-</body>
-</html>
+    <br>
+    <a href="{{ route('home') }}" class="btn btn-success">Return to Home</a>
+@endsection

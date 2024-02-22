@@ -8,21 +8,25 @@ class ProductController extends Controller
 {
     public function foodBeverage()
     {
-        return view('products.food-beverage');
+        $activeNavItem = 'food_beverage';
+        return view('products.food_beverage', compact('activeNavItem'));
     }
 
     public function beautyHealth()
     {
-        return view('products.beauty-health');
+        $activeNavItem = 'beauty_health';
+        return view('products.beauty_health', compact('activeNavItem'));
     }
 
     public function homeCare()
     {
-        return view('products.home-care');
+        $activeNavItem = 'home_care';
+        return view('products.home_care', compact('activeNavItem'));
     }
 
     public function babyKid()
     {
-        return view('products.baby-kid');
+        $activeNavItem = 'baby_kid';
+        return view('products.baby_kid', compact('activeNavItem'));
     }
 }

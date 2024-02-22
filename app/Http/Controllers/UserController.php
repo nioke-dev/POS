@@ -8,6 +8,7 @@ class UserController extends Controller
 {
     public function showProfile($id, $name)
     {
-        return view('user.profile', ['id' => $id, 'name' => $name]);
+        $activeNavItem = 'profile';
+        return view('user.show', ['id' => $id, 'name' => $name,], compact('activeNavItem'));
     }
 }

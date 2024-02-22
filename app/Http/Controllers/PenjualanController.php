@@ -8,6 +8,7 @@ class PenjualanController extends Controller
 {
     public function index()
     {
-        return view('penjualan.index');
+        $activeNavItem = 'penjualan';
+        return view('sales.index', compact('activeNavItem'));
     }
 }
